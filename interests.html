@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Youngrok Page</title>
+
+  <style>
+  html{
+    background-color: rgb(225,225,225);
+  }
+  #menu{
+    width: 100%;
+    height: 70px;
+  }
+  .main_links{
+    position: absolute;
+    font-size:20px;
+    text-align: left;
+    margin-left:40px;
+    margin-top:40px;
+    letter-spacing:2px;
+    height: 50px;
+    color: rgb(29,44,44);
+  }
+  .sub_links{
+    position: absolute;
+    height: 50px;
+    font-size:20px;
+    text-align: left;
+    margin-top: 53px;
+    letter-spacing:2px;
+
+  }
+
+  a:link{		text-decoration: none; color: rgb(30,45,45);}
+  a:visited{	text-decoration: none; color: rgb(30,45,45);}
+  a:active{	text-decoration: none; color: rgb(70,100,130);}
+  a:hover{text-decoration:none; color: rgb(70,100,130);}
+  a.sub_links:hover{border-bottom: 3px solid rgb(70,100,130);}
+
+  .aboutme{left: 800px; }
+  .interests{left:950px;border-bottom: 3px solid rgb(30,45,45);}
+  .projects{left: 1150px;}
+  .suggestions{left:1300px;}
+
+  #main_logo{
+    font-size:40px
+  }
+  #main_divider{
+    margin-top:32px;
+    color: solid black;
+
+  }
+  #title{
+    margin-left: 400px;
+  }
+  #container{
+    text-align:center;
+  }
+
+  #ai, #music{
+    display:inline;
+    height:500px;
+    width:500px;
+  }
+  </style>
+
+</head>
+
+
+<body>
+  <div id="menu">
+    <a class="main_links" href="./my_index.html">This is <strong id="main_logo">SYR</strong></a>
+    <a class="sub_links aboutme" href="./about.html">ABOUT ME</a>
+    <a class="sub_links interests" href="./interests.html">MY INTERESTS</a>
+    <a class="sub_links projects" href="./projects.html">PROJECTS</a>
+    <a class="sub_links suggestions" href="./suggestion.html">SUGGESTIONS</a>
+  </div>
+<hr id="main_divider">
+
+
+  <br><br>
+
+  <div id="title">
+    <h2>AI
+    <span style="display:inline-block; width: 700px;"></span>
+    Music Interests</h2>
+  </div>
+
+  <br><br>
+  <div id="container">
+    <div id="ai">
+      <iframe width="660" height="450" src="https://www.youtube.com/embed/Ipi40cb_RsI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+
+    <span style="display:inline-block; width: 200px;"></span>
+    <div id="music">
+      <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/opus/1076043818?app=music"></iframe>
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
