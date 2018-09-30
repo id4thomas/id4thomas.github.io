@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Youngrok Page</title>
+
+  <style>
+  html{
+    background-color: rgb(225,225,225);
+    font-family: "helvetica";
+    text-decoration: none; color: rgb(30,45,45);
+  }
+    #menu{
+      position:relative;
+      width: 1350px;
+      height: 70px;
+      border-bottom: 2px solid grey;
+      top:30px;
+    }
+    .main_links{
+      position: relative;
+      font-size:25px;
+      text-align: left;
+      top: 20px;
+      margin-left:40px;
+      margin-top:40px;
+      letter-spacing:2px;
+      height: 50px;
+      color: rgb(29,44,44);
+    }
+    .sub_links{
+      position: relative;
+      height: 50px;
+      font-size:20px;
+      text-align: left;
+      top:10px;
+      letter-spacing:2px;
+
+    }
+    .aboutme{
+      position:relative;
+      left: 300px;
+
+    }
+    .interests{
+      position:relative;
+      left:350px;
+    }
+    .projects{
+      position:relative;
+      left: 400px;
+    }
+    .suggestions{
+      position:relative;
+      left:450px;
+      border-bottom: 3px solid rgb(30,45,45);
+      padding-bottom:18px;
+    }
+    #main_logo{
+      font-size:40px
+    }
+
+    a:link{		text-decoration: none; color: rgb(30,45,45);}
+    a:visited{	text-decoration: none; color: rgb(30,45,45);}
+    a:active{	text-decoration: none; color: rgb(70,100,130);}
+    a:hover{text-decoration:none; padding-bottom:18px; color: rgb(70,100,130);}
+    a.sub_links:hover{border-bottom: 3px solid rgb(70,100,130);}
+
+    #main_form{
+      position:relative;
+      text-align:center;
+      left:100px;
+      top:50px;
+      width:1200px;
+    }
+
+    #contacts{
+      position:relative;
+      top:200px;
+      width:1350px;
+      border-top:2px solid rgb(30,45,45);
+      padding-top:10px;
+      padding-bottom: 20px;
+      text-align: right;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div id="menu">
+    <a class="main_links" href="./index.html">This is <strong id="main_logo">SYR</strong></a>
+    <a class="sub_links aboutme" href="./about.html">ABOUT ME</a>
+    <a class="sub_links interests" href="./interests.html">MY INTERESTS</a>
+    <a class="sub_links projects" href="./projects.html">PROJECTS</a>
+    <a class="sub_links suggestions" href="./suggestion.html">SUGGESTIONS</a>
+
+  </div>
+
+  <div id="main_form">
+  <form>
+    <span style="display:inline-block; width: 50px;"></span>
+    <img id="goopsin" src="./goopsin.jpeg" width="300" height="300" >매우 부탁</img>
+    <h2>HI!</h2>
+
+    Please leave Your nickname&nbsp;&nbsp;&nbsp;
+    <input type="text" name="id"/><br>
+
+    Please leave Your email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="email"/><br>
+    <br><br>
+
+    <h2>Your Profession</h2>
+    <select name="profession" id="profession">
+  		<option value="database">Database</option>
+  		<option value="ai">Artificial Intelligence</option>
+  		<option value="system">System</option>
+  		<option value="network">Network</option>
+  		<option value="other">Other</option>
+  	</select>
+    <br><br>
+    <fieldset id="star">
+      <legend>Design of my Homepage</legend>
+      <br>
+      <input type="radio" name="interest" value="5">매우 좋음
+      <span style="display:inline-block; width: 50px;"></span>
+  		<input type="radio" name="interest" value="4">좋음&emsp;
+      <span style="display:inline-block; width: 50px;"></span>
+  		<input type="radio" name="interest" value="3">보통&emsp;
+      <span style="display:inline-block; width: 50px;"></span>
+  		<input type="radio" name="interest" value="2">별로&emsp;
+      <span style="display:inline-block; width: 50px;"></span>
+  		<input type="radio" name="interest" value="1">매우 별로&emsp;
+      <span style="display:inline-block; width: 50px;"></span>
+  		<input type="radio" name="interest" value="0">몹시 별로
+      <br><br>
+    </fieldset>
+    <br><br>
+    <h2>Please Write any Suggestions</h2>
+    <textarea name="suggestions" id="box" rows="20" cols="100"></textarea>
+    <div id="submit_area">
+    <h2>Submit Information</h2>
+    <input id="submit_button" type="submit" >
+    </div>
+    <span style="display:inline-block; width: 50px;"></span>
+    <img id="thnx" src="./thnx.jpeg" width ="300" height="300">매우 감사!</img>
+  </form>
+
+</div>
+    <div id="contacts">
+      Phone: +82-10-9238-8678
+      <span style="display:inline-block; width: 20px;"></span>
+      Email: id2thomas@gmail.com
+      <span style="display:inline-block; width: 20px;"></span>
+    </div>
+
+
+</body>
+
+</html>
