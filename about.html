@@ -5,10 +5,15 @@
   <title>Youngrok Page</title>
 
   <style>
+
+
   html{
     background-color: rgb(225,225,225);
     font-family: "helvetica";
     text-decoration: none; color: rgb(30,45,45);
+  }
+  body{
+    width:1500px;
   }
     #menu{
       position:relative;
@@ -65,6 +70,42 @@
     a:hover{text-decoration:none; padding-bottom:18px; color: rgb(70,100,130);}
     a.sub_links:hover{border-bottom: 3px solid rgb(70,100,130);}
 
+    #content{
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      top:70px;
+      width:1000px;
+      height:700px;
+        }
+    #me_pic{
+      width:1200px;
+      height:700px;
+    }
+    #cuteimg{
+      width:100px;
+      height:200px;
+    }
+    @-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+
+/* Standard syntax */
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+
+    #cute{
+      position:relative;
+      -webkit-animation: side_anim 4s infinite;
+    }
+    @-webkit-keyframes side_anim {
+      0% {left: -100px; }
+      50% {left: 0px;}
+      100% {left: -100px;}
+    }
 
   </style>
 
@@ -81,8 +122,11 @@
 
   </div>
 
-  <div>
-
+  <div id="content">
+    <img id="me_pic" src="./aboutme.jpeg">
+  </div>
+  <div id="cute">
+    <img id="cuteimg" src="./cute.jpeg">
   </div>
 
 
