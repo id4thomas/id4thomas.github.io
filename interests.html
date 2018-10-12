@@ -9,9 +9,11 @@
     background-color: rgb(225,225,225);
     font-family: "helvetica";
     text-decoration: none; color: rgb(30,45,45);
+    height:auto;
   }
   body{
     width:1400px;
+    height: auto;
   }
     #menu{
       position:relative;
@@ -90,13 +92,48 @@
       padding-left:100px;
       padding-right: 100px;
       top:50px;
-      width:1300px;
+      width:1500px;
     }
     #ai, #music{
       display:inline;
       height:500px;
       width:500px;
     }
+    #descript{
+      position:relative;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left:70px;
+      padding-right: 100px;
+      top:100px;
+      width:1500px;
+      margin-left:15px;
+      margin-right:15px;
+    }
+    #descript_ai,#descript_music{
+      display:inline-block;
+      height:500px;
+      width:500px;
+
+    }
+    .sub_title{
+      position:relative;
+      margin-left:auto;
+      margin-right:auto;
+      width:600px;
+    }
+    ul{
+      width:600px;
+      padding-left: 10px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    li{
+      font-size:25px;
+      margin-top:15px;
+    }
+
   </style>
 
 </head>
@@ -132,6 +169,29 @@
       </div>
     </div>
   </div>
+
+  <div id="descript">
+    <div id="descript_ai" >
+      <h1 class="sub_title">Some Topics of Interest</h1>
+      <ul>
+        <li>Using RNN to train AI to play games  ↑</li>
+        <li>Google NSynth - Machine Learning to create Sounds</li>
+        <li>NVIDIA - Deep Learning to make artificial Slow-Mo</li>
+      </ul>
+    </div>
+    <span style="display:inline-block; width: 150px;"></span>
+    <div id="descript_music">
+      <h1 class="sub_title">My Favorite Artists</h1>
+      <ul>
+        <li>Eric Prydz - Produces Beautiful Progressive House ↑</li>
+        <li>Jon Hopkins - Omnious/Beautiful Ambient Electronic</li>
+        <li>MUSE - Experimental yet Well Produced Rock Tracks</li>
+      </ul>
+    </div>
+  </div>
+
+
+
 
 
 
