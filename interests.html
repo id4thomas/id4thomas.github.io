@@ -40,12 +40,10 @@
       text-align: left;
       top:10px;
       letter-spacing:2px;
-
     }
     .aboutme{
       position:relative;
       left: 300px;
-
     }
     .interests{
       position:relative;
@@ -64,58 +62,36 @@
     #main_logo{
       font-size:40px
     }
-
     a:link{		text-decoration: none; color: rgb(30,45,45);}
     a:visited{	text-decoration: none; color: rgb(30,45,45);}
     a:active{	text-decoration: none; color: rgb(70,100,130);}
     a:hover{text-decoration:none; padding-bottom:18px; color: rgb(70,100,130);}
     a.sub_links:hover{border-bottom: 3px solid rgb(70,100,130);}
-
-
     #title{
       position:relative;
       top:50px;
       padding-left:350px;
-      margin-left: auto;
-      margin-right:auto;
-
+      left:100px;
     }
     #content{
       position:relative;
       margin-left: auto;
       margin-right:auto;
     }
-    #container{
-      position:relative;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left:100px;
-      padding-right: 100px;
-      top:50px;
-      width:1500px;
+    #ai{
+      position: relative;
+      float:left;
+      left: 200px;
+      top:60px;
     }
-    #ai, #music{
-      display:inline;
-      height:500px;
-      width:500px;
+    #music{
+      position: relative;
+      float:right;
+      left:100px;
+      top:60px;
     }
-    #descript{
-      position:relative;
-      display:block;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left:70px;
-      padding-right: 100px;
-      top:100px;
-      width:1500px;
-      margin-left:15px;
-      margin-right:15px;
-    }
-    #descript_ai,#descript_music{
-      display:inline-block;
-      height:500px;
-      width:500px;
-
+    .descript{
+      text-align: center;
     }
     .sub_title{
       position:relative;
@@ -132,8 +108,8 @@
     li{
       font-size:25px;
       margin-top:15px;
+      text-align: left;
     }
-
   </style>
 
 </head>
@@ -152,44 +128,43 @@
   <div id="content">
     <div id="title">
       <h2>AI
-      <span style="display:inline-block; width: 550px;"></span>
+      <span style="display:inline-block; width: 600px;"></span>
       Music Interests</h2>
     </div>
 
     <br><br>
-    <div id="container">
-      <div id="ai">
+
+    <div id="ai">
+      <div id="ai_vid">
         <iframe width="550" height="400" src="https://www.youtube.com/embed/Ipi40cb_RsI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-
-
-      <span style="display:inline-block; width: 100px;"></span>
-      <div id="music">
-        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="400" style="width:100%;max-width:550px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/opus/1076043818?app=music"></iframe>
+      <br>
+      <div class="descript" >
+        <h1 class="sub_title">Some Topics of Interest</h1>
+        <br>
+        <ul>
+          <li>Using RNN to train AI to play games</li>
+          <li>Google NSynth - Machine Learning to create Sounds</li>
+          <li>NVIDIA - Deep Learning to make artificial Slow-Mo</li>
+        </ul>
       </div>
     </div>
-  </div>
 
-  <div id="descript">
-    <div id="descript_ai" >
-      <h1 class="sub_title">Some Topics of Interest</h1>
-      <ul>
-        <li>Using RNN to train AI to play games  ↑</li>
-        <li>Google NSynth - Machine Learning to create Sounds</li>
-        <li>NVIDIA - Deep Learning to make artificial Slow-Mo</li>
-      </ul>
+    <div id="music">
+      <div id="music_player">
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="400" style="width:100%;max-width:550px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/opus/1076043818?app=music"></iframe>
+      </div>
+      <br>
+      <div class="descript">
+        <h1 class="sub_title">My Favorite Artists</h1>
+        <br>
+        <ul>
+          <li>Eric Prydz - Produces Beautiful Progressive House</li>
+          <li>Jon Hopkins - Omnious/Beautiful Ambient Electronic</li>
+          <li>MUSE - Experimental yet Well Produced Rock Tracks</li>
+        </ul>
+      </div>
     </div>
-    <span style="display:inline-block; width: 150px;"></span>
-    <div id="descript_music">
-      <h1 class="sub_title">My Favorite Artists</h1>
-      <ul>
-        <li>Eric Prydz - Produces Beautiful Progressive House ↑</li>
-        <li>Jon Hopkins - Omnious/Beautiful Ambient Electronic</li>
-        <li>MUSE - Experimental yet Well Produced Rock Tracks</li>
-      </ul>
-    </div>
-  </div>
-
 
 
 
