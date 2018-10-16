@@ -89,12 +89,12 @@
     
     #cute{
       position:relative;
-      -webkit-animation: side_anim 4s infinite;
+      -webkit-animation: side_anim 3s infinite;
     }
     @-webkit-keyframes side_anim {
-      0% {left: -100px; }
-      50% {left: 0px;}
-      100% {left: -100px;}
+      0% {left: -100px; -webkit-animation-timing-function:ease-out;}
+      50% {left: 0px;-webkit-animation-timing-function:ease-in;}
+      100% {left: -100px;-webkit-animation-timing-function:ease-out;}
     }
 
   </style>
